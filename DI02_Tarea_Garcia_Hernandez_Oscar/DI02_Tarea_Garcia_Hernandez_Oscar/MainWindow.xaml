@@ -1,0 +1,21 @@
+﻿<Window x:Class="DI02_Tarea_Garcia_Hernandez_Oscar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DI02_Tarea_Garcia_Hernandez_Oscar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Citas">
+                <MenuItem Header="Crear..." ToolTip="Crear una nueva cita." Click="MenuItem_Click_Crear"/>
+                <MenuItem Header="Acceder al registro..." ToolTip="Ver las citas registradas." Click="MenuItem_Click_Registro"/>
+                <MenuItem Header="Salir" ToolTip="Salir de la aplicación." Click="MenuItem_Click_Salir"/>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="ButtonCrear" ToolTip="Crear una nueva cita." Content="Crear..." HorizontalAlignment="Left" Width="100" Height="30" Click="ButtonCrear_Click" Margin="270,354,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonRegistro" ToolTip="Ver las citas registradas." Content="Registro..." HorizontalAlignment="Left" Width="100" Height="30" Click="ButtonRegistro_Click" Margin="400,354,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonPerfil" ToolTip="Acceder al perfil del usuario." Content="Perfil del cliente..." HorizontalAlignment="Left" Width="100" Height="30" Click="ButtonPerfilCliente_Click" Margin="530,354,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DI02_Tarea_Garcia_Hernandez_Oscar/1.0.0": {
+        "runtime": {
+          "DI02_Tarea_Garcia_Hernandez_Oscar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DI02_Tarea_Garcia_Hernandez_Oscar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

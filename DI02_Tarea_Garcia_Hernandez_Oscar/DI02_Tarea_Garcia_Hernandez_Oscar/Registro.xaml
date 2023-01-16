@@ -1,0 +1,16 @@
+﻿<Window x:Class="DI02_Tarea_Garcia_Hernandez_Oscar.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DI02_Tarea_Garcia_Hernandez_Oscar"
+        mc:Ignorable="d"
+        Title="Registro de citas" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGridCitas" Margin="10,50,10,100" ItemsSource="{Binding Path=listaCitas}" AutoGenerateColumns="True"/>
+        <Button x:Name="ButtonVolver" ToolTip="Este botón cierra la ventana y te lleva de regreso." Content="Volver" HorizontalAlignment="Left" Width="100" Margin="50,354,0,0" Click="ButtonVolver_Click" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonEditar" ToolTip="Edita una cita ya existente." Content="Editar" HorizontalAlignment="Center" Width="100" Height="30" Click="ButtonEditar_Click" Margin="0,354,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonEliminar" ToolTip="Elimina una cita." Content="Eliminar" HorizontalAlignment="Left" Width="100" Margin="650,354,0,0" Height="30" VerticalAlignment="Top" Click="ButtonEliminar_Click"/>
+
+    </Grid>
+</Window>
