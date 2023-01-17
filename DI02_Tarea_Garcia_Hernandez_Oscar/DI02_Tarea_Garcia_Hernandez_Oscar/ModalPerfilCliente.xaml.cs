@@ -77,7 +77,7 @@ namespace DI02_Tarea_Garcia_Hernandez_Oscar
             {
                 MessageBox.Show("Completa la direccion fisica", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }else
-            
+
             if (string.IsNullOrEmpty(DatePicker.Text))
             {
                 MessageBox.Show("Completa la fecha", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
