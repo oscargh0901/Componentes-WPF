@@ -27,7 +27,7 @@ public partial class Dni : UserControl
         }
         else
         {
-            MessageBox.Show("Escribe un DNI Valido", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show("Escribe un DNI valido", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         } 
     }
 }
