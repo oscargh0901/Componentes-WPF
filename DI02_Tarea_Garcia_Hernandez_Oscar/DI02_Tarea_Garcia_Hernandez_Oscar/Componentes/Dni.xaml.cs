@@ -22,7 +22,8 @@ public partial class Dni : UserControl
         
         if (letras[posicion] >= 0 && letras[posicion] <= 22)
         {
-            // Es correcto
+            // Pinto el los numeros del nif y la letra
+            TextBoxDni.Text = Numero + letras[posicion];;
         }
         else
         {
