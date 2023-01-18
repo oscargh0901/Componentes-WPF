@@ -26,30 +26,30 @@
         </Grid.ColumnDefinitions>
         
         <Label Content="Nombre" Grid.Column="0" Grid.Row="0" />
-        <TextBox x:Name="TextBoxName" Grid.Column="1" Grid.Row="0" ToolTip="Indicanos tu nombre para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Nombre , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
+        <TextBox x:Name="TextBoxName" Margin="0,5,0,5" Grid.Column="1" Grid.Row="0" ToolTip="Indicanos tu nombre para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Nombre , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
         
         <Label Content="Apellidos" Grid.Column="0" Grid.Row="1"/>
-        <TextBox x:Name="TextBoxSurnames" Grid.Column="1" Grid.Row="1" ToolTip="Indicanos tus apellidos para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Surnames , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
+        <TextBox x:Name="TextBoxSurnames" Margin="0,5,0,5" Grid.Column="1" Grid.Row="1" ToolTip="Indicanos tus apellidos para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Surnames , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
 
         <Label Content="Telefono" Grid.Column="0" Grid.Row="2"/>
-        <TextBox x:Name="TextBoxPhoneNumber" Grid.Column="1" Grid.Row="2" ToolTip="Indicanos tu numero de telefono para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=PhoneNumber , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
+        <TextBox x:Name="TextBoxPhoneNumber" Margin="0,5,0,5" Grid.Column="1" Grid.Row="2" ToolTip="Indicanos tu numero de telefono para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=PhoneNumber , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
 
         <Label Content="Email" Grid.Column="0" Grid.Row="3"/>
-        <TextBox x:Name="TextBoxMail" Grid.Column="1" Grid.Row="3" ToolTip="Indicanos tu email para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Mail , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
+        <TextBox x:Name="TextBoxMail" Margin="0,5,0,5" Grid.Column="1" Grid.Row="3" ToolTip="Indicanos tu email para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Mail , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
         
         <Label Content="DNI" Grid.Column="0" Grid.Row="4"/>
         <componentes:Dni x:Name="TBDni" Grid.Column="1" Grid.Row="4"></componentes:Dni>          
 
         <Label Content="Direccion fisica" Grid.Column="0" Grid.Row="5"/>
-        <TextBox x:Name="TextBoxAddress" Grid.Column="1" Grid.Row="5" ToolTip="Indicanos tu direccion para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Address , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
+        <TextBox x:Name="TextBoxAddress" Margin="0,5,0,5" Grid.Column="1" Grid.Row="5" ToolTip="Indicanos tu direccion para ponernos en contacto" TextWrapping="Wrap" Text="{Binding Path=Address , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" SpellCheck.IsEnabled="True" LostFocus="TextBoxMail_LostFocus"/>
 
         <Label Content="Fecha de nacimiento" Grid.Column="0" Grid.Row="6"/>
-        <DatePicker x:Name="DatePicker" Grid.Column="1" Grid.Row="6" SelectedDate="{Binding Path=Fecha}" />
+        <DatePicker x:Name="DatePicker" Margin="0,5,0,5" Grid.Column="1" Grid.Row="6" SelectedDate="{Binding Path=Fecha}" />
 
         <Label Content="Mayor de 18 años" Grid.Column="0" Grid.Row="7"/>
-        <CheckBox x:Name="CheckCertificado" Grid.Column="1" Grid.Row="7" ToolTip="Dinos si eres mayor de edad o no." Content="*"/>
+        <CheckBox x:Name="CheckCertificado" Margin="0,5,0,5" Grid.Column="1" Grid.Row="7" ToolTip="Dinos si eres mayor de edad o no." Content="*"/>
 
-        <Button x:Name="ButtonAceptar" Grid.Column="0" Grid.Row="8" ToolTip="Al aceptar, envias el contenido del formulario para completar el perfil." Content="Aceptar" Click="ButtonAceptar_Click"/>
-        <Button x:Name="ButtonCancelar" Grid.Column="1" Grid.Row="8" ToolTip="Cancelas la operación y vuelves a la página principal." Content="Cancelar" Click="ButtonCancelar_Click"/>
+        <Button x:Name="ButtonAceptar" Margin="20,5,-20,5" Grid.Column="0" Grid.Row="8" ToolTip="Al aceptar, envias el contenido del formulario para completar el perfil." Content="Aceptar" Click="ButtonAceptar_Click"/>
+        <Button x:Name="ButtonCancelar" Margin="60,5,0,5" Grid.Column="1" Grid.Row="8" ToolTip="Cancelas la operación y vuelves a la página principal." Content="Cancelar" Click="ButtonCancelar_Click"/>
     </Grid>
 </Window>
